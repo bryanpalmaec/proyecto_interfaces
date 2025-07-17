@@ -1,9 +1,7 @@
-// src/app/app.ts
+
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-// import { RouterModule, RouterOutlet } from '@angular/router'; // ¡Elimina estas importaciones!
 
-// Vuelve a importar todos tus componentes
 import { Home } from './home/home';
 import { Navbar } from './navbar/navbar';
 import { Nosotros } from './nosotros/nosotros';
@@ -17,7 +15,6 @@ import { Footer } from './footer/footer';
   selector: 'app-root',
   imports: [
     CommonModule,
-    // Agrega de nuevo todos tus componentes aquí
     Home, Navbar, Nosotros, Servicios, Industria, Portafolio, Contacto, Footer
   ],
   templateUrl: './app.html',
