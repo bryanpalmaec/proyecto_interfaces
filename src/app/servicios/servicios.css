@@ -1,4 +1,4 @@
-/* === Services Section === */
+/* Servicios*/
 .services-section {
   background-color: #1e1e1e;
   color: white;
@@ -55,7 +55,7 @@
   color: #fff;
 }
 
-/* === Metrics Section === */
+/* Metricas */
 .metrics-section {
   background-color: #fff;
   color: #111;
@@ -94,7 +94,7 @@
   margin-top: 10px;
 }
 
-/* === Responsive adjustments === */
+/* Responsive */
 @media (max-width: 600px) {
   .services-header .heading,
   .metrics-heading {

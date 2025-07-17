@@ -84,7 +84,7 @@
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* Animations */
+/* Animaciones */
 @keyframes fadeIn {
   from {
     opacity: 0;

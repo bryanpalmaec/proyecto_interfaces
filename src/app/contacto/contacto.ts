@@ -21,7 +21,6 @@ export class Contacto {
   }
 
   onSubmit() {
-      // Aquí podrías querer validar antes de enviar, pero si quieres quitar lógica, simplemente elimina el if:
   console.log('Formulario enviado:', this.contactoForm.value);
   this.contactoForm.reset();
   }
