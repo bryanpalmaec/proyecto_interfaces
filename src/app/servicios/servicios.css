@@ -1,0 +1,108 @@
+/* === Services Section === */
+.services-section {
+  background-color: #1e1e1e;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-header .subheading {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.services-header .heading {
+  font-size: 2rem;
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.service-card {
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  padding: 30px 20px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: default;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  background-color: #353535;
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.service-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* === Metrics Section === */
+.metrics-section {
+  background-color: #fff;
+  color: #111;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.metrics-heading {
+  font-size: 1.8rem;
+  margin-bottom: 50px;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.metric-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #004aad;
+}
+
+.metric-label {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.metric-desc {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* === Responsive adjustments === */
+@media (max-width: 600px) {
+  .services-header .heading,
+  .metrics-heading {
+    font-size: 1.5rem;
+  }
+
+  .metric-number {
+    font-size: 2rem;
+  }
+}

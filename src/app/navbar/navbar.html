@@ -1,0 +1,40 @@
+<nav class="navbar">
+  <div class="navbar-container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="assets/logo_header.png" alt="Logo" />
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="nav-links">
+      <li><a href="#">Sobre Nosotros</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Industria</a></li>
+      <li><a href="#">Portfolio</a></li>
+    </ul>
+
+    <!-- Desktop Right Actions -->
+    <div class="nav-actions">
+      <div class="search-wrapper">
+        <button class="search-btn">🔍</button>
+        <input type="text" class="search-input" placeholder="Search..." />
+      </div>
+      <button class="contact-btn">CONTACT US</button>
+    </div>
+
+    <!-- Hamburger for Mobile -->
+    <button class="hamburger" (click)="toggleMobileMenu()">☰</button>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" [class.open]="isMobileMenuOpen">
+    <input type="text" placeholder="Search..." class="mobile-search" />
+    <ul>
+      <li><a href="#">Sobre Nosotros</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Industria</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+  </div>
+</nav>

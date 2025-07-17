@@ -1,0 +1,32 @@
+<section class="about-us-section">
+  <h2 class="section-title">Sobre Nosotros</h2>
+
+  <div class="about-content">
+    <!-- Left: Text -->
+    <div class="about-text">
+      <p>
+        Fundada en 2010, nuestra empresa nació con una misión clara: transformar ideas en soluciones digitales reales. 
+        A lo largo de los años, hemos evolucionado junto a la tecnología y nuestros clientes, creando productos que marcan la diferencia.
+      </p>
+      <p>
+        Nuestro equipo combina creatividad, estrategia y tecnología para llevar cada proyecto al siguiente nivel. 
+        Creemos en la innovación continua, la colaboración honesta y el impacto real.
+      </p>
+    </div>
+
+    <!-- Right: Carousel -->
+    <div class="about-carousel">
+      <div class="carousel-container">
+        <img
+          [src]="images[currentImageIndex]"
+          class="carousel-image"
+          alt="Imagen sobre nosotros"
+        />
+        <div class="carousel-controls">
+          <button (click)="prevImage()">←</button>
+          <button (click)="nextImage()">→</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

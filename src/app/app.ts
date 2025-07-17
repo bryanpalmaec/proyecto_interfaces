@@ -1,12 +1,24 @@
-import { Component, signal } from '@angular/core';
+import {Component} from '@angular/core';
+import {Home} from './home/home';
+import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { Navbar } from './navbar/navbar';
+import { Nosotros } from './nosotros/nosotros';
+import { Servicios } from './servicios/servicios';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [CommonModule, RouterOutlet, Home,Navbar,Nosotros,Servicios],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css'],
 })
 export class App {
-  protected readonly title = signal('proyecto_interfaces');
+  // Propiedades del componente
+  title = 'Mi App Angular 20';
+  currentYear = new Date().getFullYear();
+
+  // Métodos/funciones
+  greetUser() {
+    return `¡Hoy es ${new Date().toLocaleDateString()}!`;
+  }
 }
