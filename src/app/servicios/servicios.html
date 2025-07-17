@@ -1,7 +1,7 @@
 <section class="services-section">
   <div class="services-header">
     <h4 class="subheading">NUESTROS SERVICIOS</h4>
-    <h2 class="heading">Innovando el Desarrollo de Software con estrategia tecnológica</h2>
+    <h2 class="heading">Empoderando a las empresas con servicios tecnológicos estratégicos</h2>
   </div>
 
   <div class="services-grid">
@@ -13,20 +13,12 @@
 </section>
 
 <section class="metrics-section">
-  <h3 class="metrics-heading">Un vistazo a nuestras estadísticas</h3>
+  <h3 class="metrics-heading">Un vistazo a la innovación</h3>
   <div class="metrics-grid">
     <div class="metric" *ngFor="let metric of metrics">
-      <div
-        class="metric-number"
-        #metricNumber
-        [attr.data-target]="metric.number"
-        [attr.data-suffix]="metric.suffix"
-      >
-        0
-      </div>
+      <div class="metric-number">{{ metric.number }}</div>
       <div class="metric-label">{{ metric.label }}</div>
       <p class="metric-desc">{{ metric.desc }}</p>
     </div>
   </div>
 </section>
-
