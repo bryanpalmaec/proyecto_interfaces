@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { Home } from './home/home'; // Asegúrate de que los nombres de las clases de componentes terminen en 'Component' y que los archivos también
+import { Home } from './home/home'; 
 import { Nosotros } from './nosotros/nosotros';
 import { Servicios } from './servicios/servicios';
 import { Industria } from './industria/industria';
@@ -13,5 +13,5 @@ export const routes: Routes = [
   { path: 'industria', component: Industria },
   { path: 'portafolio', component: Portafolio },
   { path: 'contacto', component: Contacto },
-  { path: '**', redirectTo: '' } // Redirige cualquier ruta no encontrada a la ruta por defecto (Home)
+  { path: '**', redirectTo: '' } 
 ];
