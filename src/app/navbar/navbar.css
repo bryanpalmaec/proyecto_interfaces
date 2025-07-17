@@ -1,4 +1,4 @@
-/* === Navbar base === */
+/* Navbar base */
 .navbar {
   position: fixed;
   width: 100%;
@@ -23,7 +23,7 @@
   height: 50px;
 }
 
-/* === Menu Links === */
+/* Menu Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -63,7 +63,7 @@
   transform-origin: left;
 }
 
-/* === Search Button & Input === */
+/* Botón de busqueda y campo de texto */
 .nav-actions {
   display: flex;
   gap: 16px;
@@ -101,7 +101,7 @@
   display: block;
 }
 
-/* === Contact Button with animation === */
+/* Boton de contacto animacion */
 .contact-btn {
   background-color: #00c9c8;
   color: white;
@@ -118,7 +118,7 @@
   background-color: #00b2b1;
 }
 
-/* === Hamburger (visible only in mobile) === */
+/* Navtoggle para movil */
 .hamburger {
   font-size: 26px;
   color: white;
@@ -128,7 +128,7 @@
   cursor: pointer;
 }
 
-/* === Mobile Menu === */
+/* Menu de movil */
 .mobile-menu {
   display: none;
   width: 100%;
