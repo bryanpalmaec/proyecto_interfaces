@@ -1,0 +1,12 @@
+<section class="portafolio-section">
+  <h2 class="section-title">{{ titulo }}</h2>
+
+  <div class="portafolio-content">
+    <div class="portafolio-text">
+      <p>{{ descripcion }}</p>
+    </div>
+    <div class="portafolio-video">
+      <video [src]="videoUrl" autoplay muted playsinline loop controls preload="metadata" poster="assets/videos/poster.jpg"></video>
+    </div>
+  </div>
+</section>

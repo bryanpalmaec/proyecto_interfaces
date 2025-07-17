@@ -1,0 +1,21 @@
+<section class="industria-section">
+  <section class="industria-header">
+    <h2 class="section-title">Industrias que Transformamos</h2>
+    <div class="industria-cards">
+      <div class="industria-card" *ngFor="let industria of industrias">
+        <img [src]="industria.imagen" [alt]="industria.titulo" class="industria-img" />
+        <h3>{{ industria.titulo }}</h3>
+        <p>{{ industria.descripcion }}</p>
+      </div>
+    </div>
+  </section>
+
+
+  <div class="logos-section">
+    <div class="logo-marquee">
+      <div class="logo-track">
+        <img *ngFor="let logo of logos.concat(logos)" [src]="logo" class="logo-img" />
+      </div>
+    </div>
+  </div>
+</section>

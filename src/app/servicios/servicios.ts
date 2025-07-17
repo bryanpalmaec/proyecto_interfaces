@@ -10,7 +10,7 @@ import { PLATFORM_ID, Inject } from '@angular/core';
   templateUrl: './servicios.html',
   styleUrl: './servicios.css'
 })
-export class Servicios {
+export class Servicios implements AfterViewInit{
   services = [
     { icon: '🛠️', title: 'Desarrollo Personalizado' },
     { icon: '🛒', title: 'Comercial Digital' },

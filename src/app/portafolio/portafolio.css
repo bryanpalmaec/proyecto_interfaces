@@ -1,0 +1,52 @@
+.portafolio-section {
+  background-image: url('https://images.pexels.com/photos/1101122/pexels-photo-1101122.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.portafolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.portafolio-text {
+  flex: 1 1 400px;
+  font-size: 1.1rem;
+  color: #444;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.portafolio-video {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+.portafolio-video video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .portafolio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .portafolio-text {
+    text-align: justify;
+  }
+}
